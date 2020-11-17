@@ -1,0 +1,27 @@
+{
+	"compilerOptions": {
+		"lib": ["ES2019"],
+		"target": "ES5",
+		"baseUrl": "./src",
+		"sourceMap": false,
+		"declaration": false,
+		"outDir": "./",
+		"strict": true,
+		"noImplicitAny": true,
+		"strictNullChecks": true,
+		"strictFunctionTypes": true,
+		"strictBindCallApply": true,
+		"strictPropertyInitialization": true,
+		"noImplicitThis": true,
+		"alwaysStrict": true,
+		"stripInternal": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"allowSyntheticDefaultImports": true,
+		"noFallthroughCasesInSwitch": true,
+		"noImplicitReturns": true,
+		"moduleResolution": "node",
+		"forceConsistentCasingInFileNames": true
+	},
+	"exclude": ["node_modules", "test"]
+}
