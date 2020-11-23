@@ -30,7 +30,7 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: "12.x"
-          registry-url: https://npm.pkg.github.com/
+          registry-url: https://npm.pkg.github.com
       - name: Set env
         run: echo "RELEASE_VERSION=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
       - name: Install dependencies
@@ -40,6 +40,6 @@ jobs:
       - run: |
           sed -i s/"\"version\":.*/\"version\": \"$RELEASE_VERSION\","/ package.json
       - name: Publish to GHP
-        run: npm publish
+        run: npm publish --access=public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.OR_RELEASE_TOKEN }}
