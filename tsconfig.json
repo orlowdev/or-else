@@ -1,10 +1,12 @@
 {
 	"compilerOptions": {
-		"lib": ["ES2019"],
+		"lib": [
+			"ES2019"
+		],
 		"target": "ES5",
 		"baseUrl": "./src",
-		"sourceMap": false,
-		"declaration": false,
+		"sourceMap": true,
+		"declaration": true,
 		"outDir": "./",
 		"strict": true,
 		"noImplicitAny": true,
@@ -20,8 +22,10 @@
 		"allowSyntheticDefaultImports": true,
 		"noFallthroughCasesInSwitch": true,
 		"noImplicitReturns": true,
-		"moduleResolution": "node",
 		"forceConsistentCasingInFileNames": true
 	},
-	"exclude": ["node_modules", "test"]
+	"exclude": [
+		"node_modules",
+		"test"
+	]
 }
