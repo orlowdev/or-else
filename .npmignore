@@ -2,6 +2,7 @@
 .github
 node_modules
 test
+images
 .eslinrc.js
 jest.config.js
 tsconfig.json
